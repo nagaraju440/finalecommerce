@@ -28,13 +28,13 @@ import {
 // import Takequiz from './onlinequiz/takequiz'
 // import Css from './onlinequiz/css'
 // import Testing from './testingnode'
-import Login from './chatapplication/login'
-import Home from './chatapplication/home'
+// import Login from './chatapplication/login'
+// import Home from './chatapplication/home'
 // import Exp from './socketvsdatabase/exp'
 // import Timer from './reduxreact/timer'
-// import {Provider, provider,connect} from 'react-redux'
-// import Allrouters from './ecommerce/allrouters'
-// import store1 from './ecommerce/redux'
+import {Provider, provider,connect} from 'react-redux'
+import Allrouters from './ecommerce/allrouters'
+import store1 from './ecommerce/redux'
 import * as serviceWorker from './serviceWorker';
 class Car extends  React.Component{
    
@@ -54,13 +54,13 @@ class Car extends  React.Component{
         // <Exp/>
         // <Mern1/>
         //forchat     login
-        <Login/>
+//         <Login/>
     //     <Provider store={store}>
     // <Timer/>
     //     </Provider>     
-    //    <Provider store={store1}>
-    // <Allrouters/>
-    //    </Provider>
+       <Provider store={store1}>
+    <Allrouters/>
+       </Provider>
         // <Css/>
         // <Home/>
         // <Loginquiz/>
