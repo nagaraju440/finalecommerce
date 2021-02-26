@@ -32,10 +32,11 @@ import {
 // import Home from './chatapplication/home'
 // import Exp from './socketvsdatabase/exp'
 // import Timer from './reduxreact/timer'
-import {Provider, provider,connect} from 'react-redux'
-import Allrouters from './ecommerce/allrouters'
-import store1 from './ecommerce/redux'
-import * as serviceWorker from './serviceWorker';
+import Fake from './fake'
+// import {Provider, provider,connect} from 'react-redux'
+// import Allrouters from '.allrouters'
+// import store1 from '.redux'
+// import * as serviceWorker from './serviceWorker';
 class Car extends  React.Component{
    
 
@@ -58,9 +59,10 @@ class Car extends  React.Component{
     //     <Provider store={store}>
     // <Timer/>
     //     </Provider>     
-       <Provider store={store1}>
-    <Allrouters/>
-       </Provider>
+    //    <Provider store={store1}>
+    // <Allrouters/>
+    //    </Provider>
+    <Fake/>
         // <Css/>
         // <Home/>
         // <Loginquiz/>
@@ -73,4 +75,4 @@ class Car extends  React.Component{
 }
 
    ReactDOM.render(<Car/>, document.getElementById('root'));
-   serviceWorker.unregister();
+//    serviceWorker.unregister();
